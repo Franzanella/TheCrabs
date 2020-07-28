@@ -1,0 +1,97 @@
+'pt-BR':
+  activerecord:
+    models:
+      predio: Prédio
+      finance: Finanças
+    attributes:
+      predio:
+        one: Prédio
+        other: Prédios
+        nm_predio: Nome do Prédio
+        cd_numero: Número
+        cd_bloco: Bloco
+        cd_cep: CEP
+        ds_endereco: Endereço
+        ds_municipio: Município
+        sg_estado: Estado
+        ds_regioesSociais: Regiões Sociais
+        cd_telefone: Telefone
+        updated_at: Atualizado em
+        created_at: Criado em
+      finance:
+        one: Custo
+        other: Custos
+        cd_finance: Nota Fiscal
+        nm_finance: Gasto
+        ds_finance: Motivo Gasto
+        vl_finance: Valor
+        tab: Deletar
+      evento:
+        one: Evento
+        other: Eventos
+        titulo: Título
+        texto: Texto
+        date: Data
+        local: Local
+      information:
+        one: Informação
+        other: Informações
+        nm_sindico: Nome
+        ds_email: E-mail
+        cd_telefone: Telefone
+        cd_celular: Celular
+        ds_endereco: Endereço
+        ds_municipio: Município
+        cd_apartamento: Número Apartamento
+        
+        
+      
+        
+'en':
+  activerecord:
+    models:
+      predio: Building
+      finance: Finance
+    attributes:
+      predio:
+        one: Building
+        other: Buildings
+        nm_predio: Name of Building
+        cd_numero: Number
+        cd_bloco: Block
+        cd_cep: Zip Code
+        ds_endereco: Address
+        ds_municipio: County
+        sg_estado: State
+        ds_regioesSociais: Social Regions
+        cd_telefone: Telephone
+        updated_at: Updated
+        created_at: Created
+      finance: 
+        one: Outgoing
+        other: Outgoing
+        cd_finance: Invoice
+        nm_finance: Outgoing
+        ds_finance: Outgoing motive
+        vl_finance: Value
+        tab: Delete
+      evento:
+        one: Event
+        other: Events
+        titulo: Title
+        texto: Text
+        date: Date
+        local: Local
+      information:
+        one: Information
+        other: Informations
+        nm_sindico: Name
+        ds_email: E-mail
+        cd_telefone: Telephone
+        cd_celular: Cellphone
+        ds_endereco: Adress
+        ds_municipio: Country
+        cd_apartamento: Apartment Number
+        
+        
+        

@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= t('messages.finance') %></h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th><%= t('showing.nf') %></th>
+      <th><%= t('showing.gastos') %></th>
+      <th><%= t('showing.dsgastos') %></th>
+      <th><%= t('showing.valor') %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @finances.each do |finance| %>
+      <tr>
+        <td><%= finance.cd_finance %></td>
+        <td><%= finance.nm_finance %></td>
+        <td><%= finance.ds_finance %></td>
+        <td><%= finance.vl_finance %></td>
+        <td><%= link_to t('links.edit'), edit_finance_path(finance) %></td>
+        <td><%= link_to t('links.tab'), finance, method: :delete, data: { confirm: 'Você tem certeza?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t('new.finance'), new_finance_path, class:"btn btn-primary btn-lg btn-block" %>
+<%= link_to t('back.voltar'), login_useropc_path, class:"btn btn-secondary btn-lg btn-block"%>

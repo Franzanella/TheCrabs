@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<form>
+<p>
+  <strong><%= t('showing.nf') %>:</strong>
+  <%= text_field_tag nil, @finance.cd_finance, class:"form-control" %>
+</p>
+
+<p>
+  <strong><%= t('showing.gastos') %>:</strong>
+  <%= text_field_tag nil, @finance.nm_finance, class:"form-control" %>
+</p>
+
+<p>
+  <strong><%= t('showing.dsgastos') %>:</strong>
+  <%= text_field_tag nil, @finance.ds_finance, class:"form-control" %>
+</p>
+
+<p>
+  <strong><%= t('showing.valor') %>:</strong>
+  <%= text_field_tag nil, @finance.vl_finance, class:"form-control" %>
+</p>
+</form>
+
+<%= link_to t('links.edit'), edit_finance_path(@finance), class:"btn btn-outline-primary" %> |
+<%= link_to t('links.back'), finances_path, class:"btn btn-outline-warning" %>

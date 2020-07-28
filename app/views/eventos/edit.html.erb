@@ -1,0 +1,8 @@
+<div class="jumbotron">
+<h1 class="display-4"><%= t("editing.evento") %></h1>
+<br>
+<%= render 'form', evento: @evento %>
+<%= link_to t('links.show'), @evento, class:"btn btn-dark"%> 
+<%= link_to t('links.back'), eventos_path, class:"btn btn-secondary"%>
+</div>
+ 
